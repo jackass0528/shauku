@@ -1,0 +1,28 @@
+/* $Id */
+body, input {
+    background: #FFFFFF;
+    font-family: "Lucida Sans Unicode", sans-serif, Helvetica, Verdana;
+    font-size: 150%;
+    text-align: center;
+}
+#container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#container input[type = text], #container p.email {
+    color: #BFBFBF;
+}
+#container input[type = text] {
+    border: 2px solid #E5E5E5;
+    width: 500px;
+}
+#container input[type = text].error {
+    border-color: red;
+}
+#container input[type = submit], #container input[type = text]:hover, #container input[type = text]:focus {
+    border: 2px solid #BFBFBF;
+}
+#container p.quote {
+    font-style: italic;
+}

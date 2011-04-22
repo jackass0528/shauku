@@ -1,0 +1,11 @@
+<!-- $Id$ -->
+{include file="errors/overall_header.html"}
+            <p>
+                {$lang.err_connection}
+            </p>
+
+            {if isset($message)}
+                <h1>{$lang.err_message}</h1>
+                <pre>{$message}</pre>
+            {/if}
+{include file="errors/overall_footer.html"}
