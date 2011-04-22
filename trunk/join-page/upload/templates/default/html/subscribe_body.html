@@ -1,0 +1,9 @@
+<!-- $Id$ -->
+{include file="overall_header.html"}
+    <p>{$lang.join_shauku}</p>
+    <form method="post" id="subscribe" action="{$smarty.server.REQUEST_URI}">
+        <input type="text" name="email" id="email" value="john@example.com" />
+        <input type="submit" name="submit" value="{$lang.subscribe}" id="submit" />
+    </form>
+    <p>{$lang.subscriptions|sprintf:$subscriptions}</p>
+{include file="overall_footer.html"}

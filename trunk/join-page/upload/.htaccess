@@ -1,0 +1,16 @@
+# $Id$
+
+RewriteEngine On
+
+# /activate/12345678(/)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^activate/([a-zA-Z0-9]{1,})(/?) index.php?module=activate&code=$1 [L]
+
+# /12345678(/)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9]{1,})(/?) index.php?module=$1 [L]
+
+# 404 handling
+ErrorDocument 404 /index.php

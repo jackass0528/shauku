@@ -1,0 +1,25 @@
+<!-- $Id$ -->
+{include file="errors/overall_header.html"}
+            <p>
+                {$lang.err_statement}
+            </p>
+
+            {if isset($sql_code)}
+                <h1>{$lang.sql_code}</h1>
+                <pre>{$sql_code}</pre>
+            {/if}
+
+            {if isset($message)}
+                <h1>{$lang.err_message}</h1>
+                <pre>{$message}</pre>
+            {/if}
+
+            {if isset($values) && $values|count > 0}
+                <h1>{$lang.values}</h1>
+                <ul>
+                    {foreach from=$values key=k item=v}
+                    <li>{$k}: {$v}</li>
+                    {/foreach}
+                </ul>
+            {/if}
+{include file="errors/overall_footer.html"}

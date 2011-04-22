@@ -1,0 +1,6 @@
+# $Id$
+# Here's a list of all the people who have contributed to this
+# software. New names should be added using this synax:
+#   Name <email address>
+
+Alessandro Desantis <desa.alessandro@gmail.com>
