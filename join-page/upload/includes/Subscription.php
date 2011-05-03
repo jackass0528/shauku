@@ -1,5 +1,4 @@
 <?php
-  //il php di ALessandro Desantis, fa veramente cacare, perchè è disordinato XD
 /**
  * Shauku - An open source social networking platform.
  * Copyright (C) 2011 The Shauku Team
